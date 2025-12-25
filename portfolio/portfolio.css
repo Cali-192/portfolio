@@ -1,0 +1,548 @@
+/* style.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #0f172a; /* ngjyra e artimgashi.dev */
+  color: #e2e8f0; /* tekst gri i hapur */
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+}
+
+section {
+  padding: 100px 0;
+}
+/* ===== NAVBAR ===== */
+.navbar {
+  transition: background 0.4s ease;
+  padding: 20px 0;
+}
+
+.navbar.scrolled {
+  background-color: rgba(15, 23, 42, 0.9);
+  backdrop-filter: blur(10px);
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
+  color: #e2e8f0;
+}
+
+.hero h1 {
+  letter-spacing: 1px;
+}
+
+.hero h2 {
+  color: #94a3b8;
+  font-weight: 400;
+}
+
+.btn-info {
+  background-color: #38bdf8;
+  border: none;
+  color: #0f172a;
+}
+
+.btn-info:hover {
+  background-color: #0ea5e9;
+  color: #fff;
+}
+/* ===== TYPING EFFECT ===== */
+.cursor {
+  display: inline-block;
+  background-color: #38bdf8;
+  width: 3px;
+  margin-left: 3px;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  50% {
+    background-color: transparent;
+  }
+}
+/* ===== ABOUT ME ===== */
+#about {
+  background-color: #0f172a; /* e errët si Hero */
+}
+
+#about h2 {
+  color: #38bdf8; /* blu cyan si emri */
+}
+
+#about p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+#about img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+/* Fotografia rrumbullake për About Me / Logo */
+#about img {
+  width: 200px; /* ose sa të duash */
+  height: 200px;
+  object-fit: cover; /* ruan proporcionin dhe mbush rrethin */
+}
+
+/* ===== SKILLS ===== */
+#skills {
+  background-color: #0f172a; /* i njëjtë me Hero dhe About */
+}
+
+.skill-card {
+  background-color: #1e293b; /* card slightly lighter */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+}
+
+#skills h2 {
+  color: #38bdf8;
+}
+/* ===== PROJECTS ===== */
+#projects {
+  background-color: #0f172a; /* i njëjtë me pjesët e tjera */
+}
+
+.project-card img {
+  transition: transform 0.3s;
+}
+
+.project-card:hover img {
+  transform: scale(1.05);
+}
+
+.project-card h5 {
+  color: #38bdf8;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  color: #94a3b8;
+}
+
+.project-card .btn-outline-info {
+  color: #38bdf8;
+  border-color: #38bdf8;
+}
+
+.project-card .btn-outline-info:hover {
+  background-color: #38bdf8;
+  color: #0f172a;
+}
+/* ===== CONTACT ===== */
+#contact {
+  background-color: #0f172a; /* e njëjtë me pjesët e tjera */
+}
+
+#contact h2 {
+  color: #38bdf8;
+}
+
+#contact .form-control {
+  background-color: #1e293b;
+  border: none;
+  color: #e2e8f0;
+}
+
+#contact .form-control:focus {
+  background-color: #1e293b;
+  color: #e2e8f0;
+  box-shadow: 0 0 0 0.25rem rgba(56, 189, 248, 0.25);
+}
+
+#contact .btn-info {
+  background-color: #38bdf8;
+  border: none;
+  color: #0f172a;
+}
+
+#contact .btn-info:hover {
+  background-color: #0ea5e9;
+  color: #fff;
+}
+/* ===== FOOTER ===== */
+footer p {
+  font-size: 0.95rem;
+  color: #94a3b8;
+}
+
+footer span {
+  color: #38bdf8;
+}
+/* ===== CONTACT ===== */
+#contact {
+  background-color: #0f172a; /* i njëjtë me pjesët e tjera */
+}
+
+#contact h2 {
+  color: #38bdf8;
+}
+
+#contact p {
+  color: #e2e8f0;
+}
+
+#contact .form-control {
+  background-color: #1e293b;
+  border: none;
+  color: #e2e8f0;
+}
+
+#contact .form-control:focus {
+  background-color: #1e293b;
+  color: #e2e8f0;
+  box-shadow: 0 0 0 0.25rem rgba(56, 189, 248, 0.25);
+}
+
+#contact .btn-info {
+  background-color: #38bdf8;
+  border: none;
+  color: #0f172a;
+}
+
+#contact .btn-info:hover {
+  background-color: #0ea5e9;
+  color: #fff;
+}
+/* ===== FOOTER ===== */
+.footer {
+  background-color: #0f172a;
+}
+
+.footer a:hover {
+  color: #38bdf8;
+  transition: color 0.3s ease;
+}
+
+.footer .btn-info {
+  background-color: #38bdf8;
+  border: none;
+  color: #0f172a;
+  transition: 0.3s;
+}
+
+.footer .btn-info:hover {
+  background-color: #0ea5e9;
+  color: #fff;
+}
+/* ===== HOW I WORK ===== */
+#work-process {
+  background-color: #0f172a;
+}
+
+#work-process h2 {
+  color: #38bdf8;
+  font-weight: 700;
+}
+
+#work-process .bg-dark {
+  background-color: #1e293b;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#work-process .bg-dark:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
+}
+
+#work-process i {
+  transition: transform 0.3s ease;
+}
+
+#work-process .bg-dark:hover i {
+  transform: scale(1.1);
+}
+/* ===== FAQ SECTION ===== */
+#faq {
+  background-color: #0f172a; /* sfondi si pjesët e tjera */
+}
+
+#faq h2 {
+  color: #38bdf8;
+}
+
+/* Kutia e pyetjes */
+.accordion-item {
+  background-color: #e2e8f0ef; /* gri e lehtë */
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.accordion-button {
+  background-color: #e2e8f0; /* gri e njëjtë si kutia */
+  color: #000;
+  font-weight: 500;
+  box-shadow: none;
+  border: none;
+  padding: 1rem 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Kur pyetja hapet */
+.accordion-button:not(.collapsed) {
+  background-color: #cbd5e1; /* gri pak më e errët kur hapet */
+  color: #000;
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* Heq vijat default */
+.accordion-button:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+/* Pjesa e përgjigjes */
+.accordion-body {
+  background-color: #0000000c;
+  color: #444;
+}
+
+/* SHIGJETAT BLU DREJT NË FUND */
+.accordion-button::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2300bfff' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+  transform: rotate(0deg);
+  margin-left: auto;
+  background-size: 1rem;
+}
+
+.accordion-button:not(.collapsed)::after {
+  transform: rotate(180deg);
+}
+
+/* Rregullim i distancës që të gjitha shigjetat të jenë drejt */
+.accordion-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* ===== CERTIFICATIONS ===== */
+#certifications {
+  background-color: #0f172a;
+}
+
+.cert-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cert-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(56, 189, 248, 0.2);
+}
+
+.cert-card h5 {
+  color: #38bdf8;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.cert-card p {
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+.cert-card .btn-outline-info {
+  border-color: #38bdf8;
+  color: #38bdf8;
+}
+
+.cert-card .btn-outline-info:hover {
+  background-color: #38bdf8;
+  color: #0f172a;
+}
+#about .btn-outline-info {
+  border-color: #38bdf8;
+  color: #38bdf8;
+}
+
+#about .btn-outline-info:hover {
+  background-color: #38bdf8;
+  color: #0f172a;
+}
+/* ===== STATISTICS ===== */
+#statistics {
+  background-color: #0f172a;
+}
+
+.stat-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(56, 189, 248, 0.15);
+}
+
+.stat-card h2 {
+  font-size: 2.2rem;
+}
+
+.stat-card p {
+  font-size: 0.95rem;
+  color: #94a3b8;
+}
+#back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: none; /* fillimisht fshehur */
+  z-index: 1000;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  padding: 0;
+  text-align: center;
+}
+#back-to-top:hover {
+  background-color: #0ea5e9;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  #back-to-top {
+    width: 35px;
+    height: 35px;
+    bottom: 20px;
+    right: 15px;
+    font-size: 0.8rem;
+  }
+}
+#back-to-top {
+  z-index: 999; /* jo super i madh */
+}
+/* ===== SKILLS PROGRESS BARS ===== */
+#skills-progress .progress {
+  height: 25px;
+  background-color: #1e293b; /* dark theme */
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+#skills-progress .progress-bar {
+  font-weight: 600;
+  line-height: 25px;
+  text-align: center;
+  transition: width 1.5s ease-in-out;
+}
+
+/* Responsive për mobile */
+@media (max-width: 768px) {
+  #skills-progress .progress {
+    height: 20px;
+  }
+  #skills-progress .progress-bar {
+    font-size: 0.8rem;
+  }
+}
+.hero {
+  min-height: 100vh;
+  position: relative;
+  background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
+  overflow: hidden;
+}
+
+.hero {
+  min-height: 100vh;
+  position: relative;
+  overflow: visible;
+}
+
+#hero-3d {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+#particles-js {
+  z-index: 0;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.skills-video-box{
+    position: absolute;
+    right: -5%;
+   
+}
+
+.skills-video{
+    height: 900px;
+    mix-blend-mode:lighten;
+}
+.hero-info{
+    position: absolute;
+    left: 2%;   /* ← ishte 5%, u afrua majtas */
+}
+@media screen and (max-width: 1200px){
+    .skills-video-box{
+        right: -10%;
+    }
+
+    .skills-video{
+        height: 500px;
+    }
+
+    .hero-info{
+        left: 3%;
+    }
+}
+@media screen and (max-width: 700px){
+    .skills-video-box{
+        right: 0;
+        top: 10%;
+        transform: none;
+    }
+
+    .skills-video{
+        height: 220px;
+    }
+
+    .hero-info{
+        left: 5%;
+        bottom: 10%;
+    }
+}
+@media screen and (max-width: 480px){
+    .skills-video-box{
+        display: none; /* fsheh videon */
+    }
+
+    .hero-info{
+        left: 5%;
+        bottom: 15%;
+    }
+}
+.contact-form ::placeholder {
+  color: rgba(226, 232, 240, 0.7);
+}
+
+.contact-form input:focus::placeholder,
+.contact-form textarea:focus::placeholder {
+  color: rgba(226, 232, 240, 0.4);
+}
+
